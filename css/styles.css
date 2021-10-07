@@ -111,7 +111,6 @@ img {
 .head-container {
     position: relative;
     display:flex;
-    width: 100%;
 }
 .head-nav-logo {
     font-family: Raleway;
@@ -264,7 +263,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
+    width: 100%;
     height: 120px;
     margin-bottom: 30px;
     background-color: #F5F4FA;
@@ -321,8 +320,7 @@ img {
 }
 .directions-img-text {
     position: absolute;
-    width: 370px;
-    height: 70px;
+    width: 100%;
     padding-bottom: 27px;
     padding-top: 27px;
     font-weight: 700;
@@ -425,7 +423,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 100%;
     height: 92px;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
@@ -496,7 +494,8 @@ img {
     transform: translateY(100%);
     transition: transform 250ms var(--time-cubic);
 }
-.projects-box:hover .image-wrap-info {
+.project-link:hover .image-wrap-info,
+.project-link:focus .image-wrap-info {
     top: 0;
     transform: translateY(0);
 }
@@ -508,7 +507,7 @@ img {
     border-left: 1px solid #EEEEEE;
     transition: transform 250ms var(--time-cubic)
 }
-.project-box-shadow:hover {
+.project-box-shadow:hover, .project-box-shadow:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects-sublitle {
@@ -643,8 +642,13 @@ address {
 }
 .subscribe-mail {
     align-items: center;
+    color: #ffffff;
     width: 358px;
     height: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
     padding-left: 16px;
     background-color: var(--background-grey);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -691,7 +695,7 @@ address {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity 250ms var(--time-cubic), visibility 250ms (--time-cubic);
+    transition: opacity 250ms var(--time-cubic), visibility 250ms var(--time-cubic);
 }
 .backdrop.is-hidden {
     opacity: 0;
@@ -838,8 +842,8 @@ address {
     letter-spacing: 0.03em;
     color: var(--text-grey);
 }
-    .modal-form-check-link {
-        color: var(--logo-color);
+        .modal-form-check-link {
+            color: var(--logo-color);
 }
   .checbox-wrapper {
     position: relative;
